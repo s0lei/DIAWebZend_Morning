@@ -1,0 +1,46 @@
+
+<p>Welcome to my website. You can search flight
+    information of Denver International Airport (DIA) <br></p>
+<br>
+
+<p>Current time is                 
+    <?php
+    date_default_timezone_set("America/Denver");
+    echo date("g:i A");
+    //echo date("g:i:s A"); 
+    echo "&nbsp;&nbsp;" . date("m/d/Y") . ". ";
+    ?>
+    Please check the time above to see if the flight database is current.</p>
+
+<p>I recommend that you update the flight database
+    before starting your search since flight information changes constantly
+</p>
+<br />
+
+<div>
+    <div class="box1 red">
+        <p id="progressbar1"></p>
+        <p class="ajaxPart1"> 
+            Click this box <br/><br/>Update Departure Flight Database<br/> 
+            (Morning flights 12am - 12pm)<br/> 
+        </p>
+    </div>
+
+    <div class="box1 green" >
+        <p id="progressbar2"></p>
+        <p class="ajaxPart2">
+            Click this box <br/><br/>Update Arrival Flight Database<br/>
+            (Morning flights 12am - 12pm)<br/> 
+        </p>
+    </div> 
+</div>
+
+<div class="fullflight">
+    <br />
+    <a href="/DIAWebZend_Afternoon/public/">
+        <font size="4" color="#F10CD3">
+        Note: For afternoon flights (12pm - 12am), please click here
+        </font>
+    </a>
+</div>
+
